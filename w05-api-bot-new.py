@@ -21,7 +21,7 @@ def con_api(url):
         
         # ตรวจสอบว่ามีคอลัมน์ 'id' หรือไม่
         if 'id' not in data_df.columns:
-            st.warning("ข้อมูลจาก API ไม่มีคอลัมน์ 'id' กำลังสร้าง ID เอง")
+            # st.warning("ข้อมูลจาก API ไม่มีคอลัมน์ 'id' กำลังสร้าง ID เอง")
             data_df['id'] = range(1, len(data_df) + 1)
         # st.table(data_df)
         return data_df
