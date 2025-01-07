@@ -35,8 +35,8 @@ if 'cart' not in st.session_state:
 
 products = con_api(url)
 
-df_html = table_with_images(products, url_columns=('image',))
-st.markdown(df_html, unsafe_allow_html=True)
+# df_html = table_with_images(products, url_columns=('image',))
+# st.markdown(df_html, unsafe_allow_html=True)
 
 def add_to_cart(product_id):
     product = products.loc[products['id'] == product_id].iloc[0]  # ค้นหาสินค้าจาก ID
